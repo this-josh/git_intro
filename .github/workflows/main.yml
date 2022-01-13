@@ -1,5 +1,8 @@
 name: Mark work on commit to main
-on: push
+on: 
+  push:
+    branches: [ main ]
+
 jobs:
   date:
     runs-on: ubuntu-latest
@@ -12,11 +15,15 @@ jobs:
         run: |
           # do some operation that changes a file in the git repo
           rm foo*
+          rm README.md
+          # The new README.md
+          curl https://gist.githubusercontent.com/JoshKImperial/0c5be39a0f0c2f0054d199055c325898/raw/d75593521380e3cdcb2873f36d6e6cef7ce5975d/readme.md
+
 
       - name: setup git config
         run: |
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
-          git config user.name "GitHub Actions Bot"
+          git config user.name "Mark-o-matic"
           git config user.email "<>"
 
       - name: commit
