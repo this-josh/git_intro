@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 
 jobs:
-  date:
+  mark:
     runs-on: ubuntu-latest
     steps:
       # Checkout the branch
