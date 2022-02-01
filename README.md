@@ -49,8 +49,6 @@ In this tutorial we will cover the following topics:
 3.  You'll now be prompted to login to GitHub, once done you're sorted.
 4. There are numerous ways to interact with git, as mentioned in [Git seems complicated](#git-seems-complicated) we will use the *command line* and GitHub.com
 
-**Need to decide how they should interact with git, git bash requires understanding cd**
-
 
 ## Tasks
 
@@ -58,25 +56,34 @@ This example uses python, but you can use any language just ensure the filename 
 
 1. *fork* this repository
    1. For this tutorial to work you need to enable GitHub actions, do this by ![Enable GitHub actions](.images/enable_actions.png)
-2. *clone* your *fork* of this repository
+2. *clone* your *fork* of this repository$$
    1. ![How to clone](.images/clone.png)
       1. This copies the *repos* url
-   2. Go to where you want to store the repo and run `git clone {repo_url}`
-      1. **Maybe need a video on navigating in the command line**
-      2. All future git commands will assume you're in your in this folder
+   2. Go to where you want to store the repo and run `git clone {repo_url}` in the command line
+      1. On Windows:
+         1. From file explorer create a folder to store the *repo* in, maybe call it `Introduction to git`
+         2. Right-click while in this folder and select `open Powershell` or `open Windows Terminal`
+      2. On Mac:
+         1. From finder create a folder to store the *repo* in, maybe call it `Introduction to git`
+         2. Right-click this folder, hold$$ ⌥ (option) and click `Copy "Introduction to git" as pathname"` ![How to copy pathname](.images/copy_pathname.png)
+         3. Open terminal and type `cd {cmd+v}` then press enter
+      3. You now have a command line open and in the correct folder
+         1. All future git commands will assume you're in your in this folder
 3. Create a new *branch* for you to make your changes, call it `adding_foo`
    1. First use `git branch adding_foo` to create a new branch
    2. Use `git checkout adding_foo` to use your new branch
 4. In your *repo* create a new file `foo.py`, write a function which squares its input
-   1. Tell git to add your changes with `git add foo.py`
+   1. Tell git to *add* your changes with `git add foo.py`
    2. *Commit* this file with `git commit -m "Added a function which squares its inputs"`
 5. Add to the file a new function which sums its inputs
-   1. Run `git status`, here you can see your new function has been added
+   1. Run `git status`, here you can see your `foo` file has changed
    2. Now use `git add foo.py` and`git commit -m "Added a function for summing inputs"`
 6. Add a third function which subtracts its inputs
    1. Re-run step 4's indented points
-7. Run `git push` to upload your changes to GitHub
-8. *merge* your *branch* back into main to mark your work, after a minute refresh the readme
+7. As your happy with your changes *merge* your *branch* back into main to mark your work
+   1. First change back to the main branch with `git checkout main`
+   2. Now merge your `adding_foo` branch into `main` with `git merge adding_foo`
+8. Run `git push` to upload your changes to GitHub, after a minute go to the Readme on GitHub to see how you did
 
 ## Glossary
 
