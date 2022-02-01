@@ -57,14 +57,18 @@ In this tutorial we will cover the following topics:
 This example uses python, but you can use any language just ensure the filename is `foo.{extension}`, e.g. `foo.py`, `foo.m`
 
 1. *fork* this repository
-2. Create a new *branch* for you to make your changes
-3. *clone* your *fork* of this repository
+   1. For this tutorial to work you need to enable GitHub actions, do this by ![Enable GitHub actions](.images/enable_actions.png)
+2. *clone* your *fork* of this repository
    1. ![How to clone](.images/clone.png)
       1. This copies the *repos* url
    2. Go to where you want to store the repo and run `git clone {repo_url}`
       1. **Maybe need a video on navigating in the command line**
-4. Go to where you cloned this *repo* and create a new file `foo.py`, write a function which squares its input
-   1. Tell git to track this file with `git add foo.py`
+      2. All future git commands will assume you're in your in this folder
+3. Create a new *branch* for you to make your changes, call it `adding_foo`
+   1. First use `git branch adding_foo` to create a new branch
+   2. Use `git checkout adding_foo` to use your new branch
+4. In your *repo* create a new file `foo.py`, write a function which squares its input
+   1. Tell git to add your changes with `git add foo.py`
    2. *Commit* this file with `git commit -m "Added a function which squares its inputs"`
 5. Add to the file a new function which sums its inputs
    1. Run `git status`, here you can see your new function has been added
