@@ -3,6 +3,3 @@ def square(a):
 
 def sum(a,b):
     return a+b
-
-def foo():
-    print("foo")
