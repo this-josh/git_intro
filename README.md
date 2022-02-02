@@ -68,11 +68,12 @@ This example uses python, but you can use any language just ensure the filename 
    2. ![How to clone](.images/clone.png)
       1. This copies the *repos* url
    3. On Windows:
-      1. From file explorer create a folder to store the *repo* in, maybe call it `Introduction to git`
-      2. Right-click while in this folder and select `open Powershell` or `open Windows Terminal`
+      1. From file explorer create a folder to store the *repo* in, maybe call it `intro_to_git`, note no spaces
+      2. Copy the folders complete path, it's in the bar at the top and will look like `C:\Users\Josh\Desktop\intro_to_git`
+      3. Open a program called powershell and type `cd {paste the path here}`
    4. On Mac:
-      1. From finder create a folder to store the *repo* in, maybe call it `Introduction to git`
-      2. Right-click this folder, hold$$ ⌥ (option) and click `Copy "Introduction to git" as pathname"` ![How to copy pathname](.images/copy_pathname.png)
+      1. From finder create a folder to store the *repo* in, maybe call it `intro_to_git`
+      2. Right-click this folder, hold$$ ⌥ (option) and click `Copy "intro_to_git" as pathname"`,  note no spaces ![How to copy pathname](.images/copy_pathname.png)
       3. Open terminal and type `cd {cmd+v}` then press enter
    5. You now have a command line open and in the correct folder
       1. Run `git clone {repo_url}` in the command line
