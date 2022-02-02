@@ -111,7 +111,7 @@ Git is a well thought out platform, however, it does come with some unusual nome
 * *Repo* - repository - essentially a folder containing code
 * *Remote* - An online service which stores your code, typically GitHub
 * *Revert* - *Reverting* a *commit* effectively deletes what was changed in that *commit*
-* *Status* -
+* *Status* - Check whether you have any changes to commit
 * *Push* - Upload the *repo* in it's current state to the *remote* `git push`
 
 ![branches](.images/git-branches.png)
