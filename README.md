@@ -74,7 +74,7 @@ This example uses python, but you can use any language just ensure the filename 
    4. On Mac:
       1. From finder create a folder to store the *repo* in, maybe call it `intro_to_git`
       2. Right-click this folder, hold$$ ⌥ (option) and click `Copy "intro_to_git" as pathname"`,  note no spaces ![How to copy pathname](.images/copy_pathname.png)
-      3. Open terminal and type `cd {cmd+v}` then press enter
+      3. Open terminal and type `cd {paste the path here}` then press enter
    5. You now have a command line open and in the correct folder
       1. Run `git clone {repo_url}` in the command line
       2. All future git commands will assume you're in your in this folder
