@@ -80,13 +80,13 @@ This example uses python, but you can use any language just ensure the filename 
 3. Create a new *branch* for you to make your changes, call it `adding_foo`
    1. First use `git branch adding_foo` to create a new branch
    2. Use `git checkout adding_foo` to use your new branch
-4. In your *repo* create a new file `foo.py`, write a function which squares its input
+4. In your *repo* create a new file `foo.py`, write a function which [squares its input](https://gist.github.com/JoshKImperial/4191bcf764d59b6a8be9caea706f6c2a)
    1. Tell git to *add* your changes with `git add foo.py`
    2. *Commit* this file with `git commit -m "Added a function which squares its inputs"`
-5. Add to the file a new function which sums its inputs
+5. Add to the file a new function which [sums its inputs](https://gist.github.com/JoshKImperial/163422b5e1a02a17e9ba3111b3ec7840)
    1. Run `git status`, here you can see your `foo` file has changed
    2. Now use `git add foo.py` and`git commit -m "Added a function for summing inputs"`
-6. Add a third function which subtracts its inputs
+6. Add a third function which [subtracts its inputs](https://gist.github.com/JoshKImperial/b5ecdf70caf8e90ffb99993969e4e19d)
    1. Re-run step 4's indented points
 7. As your happy with your changes *merge* your *branch* back into main to mark your work
    1. First change back to the main branch with `git checkout main`
