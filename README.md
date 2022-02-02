@@ -83,11 +83,12 @@ This example uses python, but you can use any language just ensure the filename 
 4. In your *repo* create a new file `foo.py`, write a function which [squares its input](https://gist.github.com/JoshKImperial/4191bcf764d59b6a8be9caea706f6c2a)
    1. Tell git to *add* your changes with `git add foo.py`
    2. *Commit* this file with `git commit -m "Added a function which squares its inputs"`
+      1. Here `"Added a function which squares its inputs"` is the *commit message*
 5. Add to the file a new function which [sums its inputs](https://gist.github.com/JoshKImperial/163422b5e1a02a17e9ba3111b3ec7840)
    1. Run `git status`, here you can see your `foo` file has changed
    2. Now use `git add foo.py` and`git commit -m "Added a function for summing inputs"`
 6. Add a third function which [subtracts its inputs](https://gist.github.com/JoshKImperial/b5ecdf70caf8e90ffb99993969e4e19d)
-   1. Re-run step 4's indented points
+   1. Re-run step 4's indented points, but change the message inside the `""` to be more suitable.
 7. As your happy with your changes *merge* your *branch* back into main to mark your work
    1. First change back to the main branch with `git checkout main`
    2. Now merge your `adding_foo` branch into `main` with `git merge adding_foo`
@@ -101,6 +102,7 @@ Git is a well thought out platform, however, it does come with some unusual nome
 * *Branch* - Create a copy of the *repo* which you can use to test new features while not breaking the main *repo*. See image below.
 * *Clone* - Download a git *repo* `git clone {repo_url}`
 * *Commit* - Creating a checkpoint in the *repos* timeline, usually has an accompanying message `git commit foo.py -m "Your commit message"`
+* *Commit message* - is a short message which should describe the changes you've made, these are important and you should always write a message
 * *Command Line* - The command line is the most fundamental way to interact with your computer, in Mac and Linux you access it via 'terminal' while in Windows you'll likely want 'powershell'
 * *Fork* - Create your own copy of a *repo*
 * *History* - A record of all the *commits* in this *repo*. Useful for reviewing what has been done.
