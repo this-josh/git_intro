@@ -1,7 +1,7 @@
 name: Mark work on commit to main
 on: 
   push:
-    branches: [ main1 ]
+    branches: [ main ]
 
 jobs:
   mark:
