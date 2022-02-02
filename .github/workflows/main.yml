@@ -17,7 +17,7 @@ jobs:
           rm foo*
           rm README.md
           # The new README.md
-          curl https://gist.githubusercontent.com/JoshKImperial/0c5be39a0f0c2f0054d199055c325898/raw/397be3fde858a6017062433f57ecf6ee475c18a4/readme.md
+          curl -O https://gist.githubusercontent.com/JoshKImperial/0c5be39a0f0c2f0054d199055c325898/raw/397be3fde858a6017062433f57ecf6ee475c18a4/readme.md
 
 
       - name: setup git config
