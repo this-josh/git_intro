@@ -31,8 +31,11 @@ In this tutorial we will cover the following topics:
 **merging**: If you have made a *branch* and are happy with it you can *merge* it back into the main *branch*  
 **history**: You can review the git *history* to see what has been *committed* over time  
 **reverting**: Sometimes *commits* can introduce problems, these can be found by reviewing the *history* and then *reverted*  
-**issues**: If you're having problems with somebody else's code, it is good practice to write an *issue*, someone can then try to fix this *issue*  
+**issues**: If you're having problems with somebody else's code, it is good practice to write an *issue*, someone can then try to fix this *issue* 
 
+### A note on this guide
+
+This guide seeks to help you understand git, it will point you in the right direction where neccessary but it is not a step by step guide, you must use your own intuition.
 ## Setting up git and GitHub
 
 1. Create a GitHub account [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
@@ -40,26 +43,31 @@ In this tutorial we will cover the following topics:
    You now have an account setup with a *remote* and git installed on your computer, we must now link the two, this isn't something you'll do regularly. The easiest way varies between operating systems:
 
 ### On windows [video tutorial](https://www.youtube.com/watch?v=3FNA2hWG-Bk)
-1. Complete parts 1 and 2 of [tasks](##-Tasks)
-2. As you run `git clone` a dialog will appear prompting you to login to GitHub, once you've down this the *repo* will download and you're sorted
+1. First you complete tasks 1 and 2 of the [tasks section below](##-Tasks)
+2. As you run `git clone` a dialog box will appear prompting you to login to GitHub, once you've down this the *repo* will download and you're sorted
 
 ### On Mac and Linux
 1.  Install the [GitHub Command Line](https://cli.github.com) from here:
 2.  In terminal run `gh auth login -w`
 3.  You'll now be prompted to login to GitHub, once done you're sorted.
-4. There are numerous ways to interact with git, as mentioned in [Git seems complicated](#git-seems-complicated) we will use the *command line* and GitHub.com
 
+
+There are numerous ways to interact with git, as mentioned in [Git seems complicated](#git-seems-complicated) we will use the *command line* and GitHub.com
 
 ## Tasks
 
 This example uses python, but you can use any language just ensure the filename is `foo.{extension}`, e.g. `foo.py`, `foo.m`
 
 1. *fork* this repository
-   1. For this tutorial to work you need to enable GitHub actions, do this by ![Enable GitHub actions](.images/enable_actions.png)
-2. *clone* your *fork* of this repository$$
-   1. ![How to clone](.images/clone.png)
+   1. First you must fork this repository by clicking the fork button ![How to fork](.images/how-to-fork.png)
+   2. For this tutorial to work you need to enable GitHub actions, do this by ![Enable GitHub actions](.images/enable_actions.png)
+2. *clone* **your** *fork* of this repository
+   1. Go to your *fork* of this repository
+      *   You can see it from the homepage
+      *  If you look at the top left of the image above showing you how to enable actions the *repos* name should be {your_username}/git_intro forked from JoshKImperial/git_intro
+   2. ![How to clone](.images/clone.png)
       1. This copies the *repos* url
-   2. Go to where you want to store the repo and run `git clone {repo_url}` in the command line
+   3. Go to where you want to store the repo and run `git clone {repo_url}` in the command line
       1. On Windows:
          1. From file explorer create a folder to store the *repo* in, maybe call it `Introduction to git`
          2. Right-click while in this folder and select `open Powershell` or `open Windows Terminal`
