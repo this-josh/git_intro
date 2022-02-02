@@ -67,16 +67,16 @@ This example uses python, but you can use any language just ensure the filename 
       *  If you look at the top left of the image above showing you how to enable actions the *repos* name should be {your_username}/git_intro forked from JoshKImperial/git_intro
    2. ![How to clone](.images/clone.png)
       1. This copies the *repos* url
-   3. Go to where you want to store the repo and run `git clone {repo_url}` in the command line
-      1. On Windows:
-         1. From file explorer create a folder to store the *repo* in, maybe call it `Introduction to git`
-         2. Right-click while in this folder and select `open Powershell` or `open Windows Terminal`
-      2. On Mac:
-         1. From finder create a folder to store the *repo* in, maybe call it `Introduction to git`
-         2. Right-click this folder, hold$$ ⌥ (option) and click `Copy "Introduction to git" as pathname"` ![How to copy pathname](.images/copy_pathname.png)
-         3. Open terminal and type `cd {cmd+v}` then press enter
-      3. You now have a command line open and in the correct folder
-         1. All future git commands will assume you're in your in this folder
+   3. On Windows:
+      1. From file explorer create a folder to store the *repo* in, maybe call it `Introduction to git`
+      2. Right-click while in this folder and select `open Powershell` or `open Windows Terminal`
+   4. On Mac:
+      1. From finder create a folder to store the *repo* in, maybe call it `Introduction to git`
+      2. Right-click this folder, hold$$ ⌥ (option) and click `Copy "Introduction to git" as pathname"` ![How to copy pathname](.images/copy_pathname.png)
+      3. Open terminal and type `cd {cmd+v}` then press enter
+   5. You now have a command line open and in the correct folder
+      1. Run `git clone {repo_url}` in the command line
+      2. All future git commands will assume you're in your in this folder
 3. Create a new *branch* for you to make your changes, call it `adding_foo`
    1. First use `git branch adding_foo` to create a new branch
    2. Use `git checkout adding_foo` to use your new branch
